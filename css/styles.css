@@ -142,7 +142,7 @@ img {
     width: 16px;
     height: 12px;
 
-    fill: var(--text-color);
+    fill: currentColor;
 
     margin-right: 10px;
 }
@@ -150,15 +150,9 @@ img {
     width: 10px;
     height: 16px;
 
-    fill: var(--text-color);
+    fill: currentColor;
 
     margin-right: 10px;
-}
-.address-nav:hover .icon-envelope,
-.address-nav:focus .icon-envelope,
-.address-nav:focus .icon-smartphone,
-.address-nav:hover .icon-smartphone{
-    fill: var(--brand-color);
 }
 
 
