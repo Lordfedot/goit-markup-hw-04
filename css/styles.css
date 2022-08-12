@@ -50,7 +50,7 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0, 15px;
+    padding: 0 15px;
 
     /* outline: solid tomato; */
 
@@ -168,7 +168,7 @@ img {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/background.jpg);
+    url(../images/background.jpg);
 }
 
 .hero .title {
@@ -253,8 +253,13 @@ img {
 .icon-background {
     background-color: var(--second-background-color);
 
-    padding: 25px 100px;
     margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -326,6 +331,10 @@ img {
 .no-padding{
     padding-bottom: 0;
 }
+.list-networks{
+    display: flex
+}
+
 .social-links {
     margin-top: 16px;
 }
@@ -344,7 +353,7 @@ img {
     background-color: var(--brand-color);
 
 }
-.social-networks + .social-networks {
+.item-networks + .item-networks {
     margin-left: 10px;
 }
 
@@ -369,7 +378,6 @@ img {
     align-items: center;
     display: flex;
 
-    padding: 16px 32px;
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
@@ -387,6 +395,7 @@ img {
 /* footer */
 .flex{
     display: flex;
+    align-items: baseline;
 }
 .footer{
     padding-top: 60px;
@@ -437,10 +446,7 @@ img {
     margin-bottom: 20px;
 }
 .social{
-    margin-top: 12px;
-    margin-right: auto;
     margin-left: 70px;
-    margin-bottom: 40px;
 }
 .footer-social-networks{
     background-color: rgba(255, 255, 255, 0.1);
@@ -460,7 +466,10 @@ img {
     background-color: var(--brand-color);
 
 }
-.footer-social-networks + .footer-social-networks{
+.flist-networks{
+    display: flex;
+}
+.fitem-networks + .fitem-networks {
     margin-left: 10px;
 }
 /* портфоліо */
@@ -499,17 +508,11 @@ img {
 }
 
 .picture {
-    border: 1px solid var(--grey-color);
 
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.picture:hover{
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 
 .picture-list{
     text-align: center;
@@ -542,17 +545,19 @@ img {
     color: var(--text-color);
 }
 .project-item {
+    border: 1px solid var(--grey-color);
     text-align: start;
     display: inline-block;
 
-    padding-bottom: 10px;
-
     text-decoration: none;
 }
+.project-item:hover,
+.project-item:focus{
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .about-project {
-    margin-left: 24px;
-    margin-top: 20px;
-    display: inline-block;
+    padding: 20px 24px;
 }
 
 
