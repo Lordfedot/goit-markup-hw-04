@@ -51,11 +51,45 @@
                 </button>
                 <div data-modal class="backdrop is-hidden">
                     <div class="modal">
-                        <button data-modal-close class="modal-button" type="button"><svg class="close-button"><use href="./images/icons.svg#close"></use></svg></button>
+                        <button data-modal-close class="modal-button" type="button">
+                            <svg class="close-button">
+                                <use href="./images/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                        <form class="sign-up-form">
+                            <label class="field">
+                                <svg class="modal-icon"><use href="./images/icons.svg#person"></use></svg>
+                                Ім'я
+                                <input class="text-field" name="name" type="name">
+                            </label>
+                            <label class="field">
+                                <svg class="modal-icon"><use href="./images/icons.svg#phone"></use></svg>
+                                Телефон
+                                <input class="text-field" type="tel" name="tel">
+                            </label>
+                            <label class="field">
+                                <svg class="modal-icon"><use href="./images/icons.svg#email"></use></svg>
+                                Пошта
+                                <input class="text-field" type="email" name="email">
+                            </label>
+                            <label class="field">
+                                Коментар
+                                <textarea  class="coment-field" name="coment" placeholder="Введіть текст"></textarea>
+                            </label>
+                            <label class="checkbox">
+                                <input class="check" type="checkbox" name="checkbox">
+                                <span class="span-icon"></span>
+                                Погоджуюся з розсилкою та приймаю <a class="deal" href="#">Умови договору</a> 
+                            </label>
+                            
+                            <button class="submit-button" type="submit">Відправити</button>
+                        </form>
                     </div> 
                 </div>
             </div>
         </section>
+        
 
         <section class="section no-padding">
             <div class="container">
@@ -345,7 +379,20 @@
                     </li>
                 </ul>               
             </div>
+            <div class="subscribe">
+                <p class="subscribe-text">Підпишіться на розсилку</p>
+                <form class="subscribe-form">
+                    <input class="email" type="email" name="email" placeholder="E-mail">
+                    <button class="subscribe-button" type="button">
+                        Підписатись
+                        <svg class="icon-send">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
+
     </footer> 
     <script src="./js/modal.js"></script>
 </body>
