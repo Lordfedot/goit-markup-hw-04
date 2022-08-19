@@ -1,0 +1,55 @@
+:root{
+    --text-color: #757575;
+    --title-color:#212121;
+    --main-background-color:#F5F5F5;
+    --second-background-color:#F5F4FA;
+    --brand-color: #2196F3;
+    --second-brand-color: #188CE8;
+    --brandnew-color: #2F303A;
+    --hero-text-color: #FFFFFF;
+    --logo-color:#000000;
+    --grey-color: #EEEEEE;
+    --top-line-color: #ECECEC;
+    --icon-color: #AFB1B8;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    letter-spacing: 0.03em;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+/*                             container and section*/
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} 
